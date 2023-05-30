@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital@0;1&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color:#F39C12;;
+}
+
+/* Estilos para el header */
+
+  /* Estilos para el main */
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 200px);
+    background-color:#F39C12;
+}
+
+main section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    margin: 60px auto;
+}
+
+main section div {
+    flex: 1;
+    max-width: 400px;
+    margin: 20px;
+}
+
+main section div img {
+    width: 100%;
+    height: auto;
+}
+
+main section div h1 {
+    text-align: center;
+    font-size: 48px;
+    margin: 20px 0;
+    color:#2C3E50;
+}
+
+  /* Estilos para las secciones */
+section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    margin: 60px auto;
+}
+
+section div {
+    flex: 1;
+    max-width: 400px;
+    margin: 20px;
+}
+
+section div h2 {
+    font-size: 36px;
+    margin: 0;
+    color: #2C3E50;
+}
+
+section div p {
+    font-size: 18px;
+    line-height: 1.5;
+    color: #2C3E50;
+}
+/* Estilos para el formulario de contacto */
+.contact-form {
+    width: 100%;
+    height: 600px;
+    border: 1px solid black;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 1px;
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+.contact-form textarea {
+    height: 150px;
+}
+
+.contact-form h1 {
+    margin: 20px;
+}
+
+.contact-form p {
+    margin: 10px;
+}
+
+  /* Estilos para el footer */
+footer {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding: 15px;
+    background-color: #C0392B;
+    box-shadow: 0px -4px 4px rgba(0, 0, 0, 0.25);
+    flex-direction: row;
+    color: black; 
+}
+
+footer h2 {
+    font-size: 95%;
+    margin: 5px 10px 0 20px;
+}
+
+footer div {
+    margin: 10px 10px;
+}
+
+footer div a {
+    display: block;
+}
+
+footer div a img {
+    width: 25px;
+    height: auto;
+}
+
+
+
+/*
+div {
+    color: #2C3E50;
+    color: #34495E;
+    color: #8E44AD;
+    color: #27AE60;
+    color: #C0392B;
+    color: #F39C12;
+}
+*/
