@@ -1,53 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital@0;1&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
-body{
-    background-color:#F39C12;;
+body {
+    background-color: #F5DEB3;
 }
 
-/* Estilos para el header */
-
-  /* Estilos para el main */
-main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: calc(100vh - 200px);
-    background-color:#F39C12;
+/* Estilos para el navbar */
+.navbar-nav .nav-link:hover {
+    color: #FFA500; /* Cambia el color al hacer hover */
 }
 
-main section {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    max-width: 1200px;
-    margin: 60px auto;
+.navbar-toggler:hover {
+    background-color: #FFA500; /* Cambia el color de fondo al hacer hover */
 }
 
-main section div {
-    flex: 1;
-    max-width: 400px;
-    margin: 20px;
-}
-
-main section div img {
-    width: 100%;
-    height: auto;
-}
-
-main section div h1 {
-    text-align: center;
-    font-size: 48px;
-    margin: 20px 0;
-    color:#2C3E50;
-}
-
-  /* Estilos para las secciones */
+/* Estilos generales */
+main,
 section {
     display: flex;
     flex-wrap: wrap;
@@ -57,23 +29,54 @@ section {
     margin: 60px auto;
 }
 
-section div {
+div {
     flex: 1;
     max-width: 400px;
     margin: 20px;
 }
 
-section div h2 {
-    font-size: 36px;
-    margin: 0;
-    color: #2C3E50;
+img {
+    width: 100%;
+    height: auto;
 }
 
-section div p {
+h1 {
+    text-align: center;
+    font-size: 48px;
+    margin: 20px 0;
+    color: #8B4513;
+}
+
+h2 {
+    font-size: 36px;
+    margin: 0;
+    color: #8B4513;
+}
+
+p {
     font-size: 18px;
     line-height: 1.5;
-    color: #2C3E50;
+    color: #8B4513;
 }
+
+/* Estilos para el main */
+main {
+    min-height: calc(100vh - 200px);
+    background-color: #F5DEB3;
+}
+
+/* Estilos para las secciones */
+section {
+    margin-bottom: 40px;
+}
+
+/* Estilos para destinos */
+.destinos-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40px;
+}
+
 /* Estilos para el formulario de contacto */
 .contact-form {
     width: 100%;
@@ -95,24 +98,21 @@ section div p {
     height: 150px;
 }
 
-.contact-form h1 {
-    margin: 20px;
-}
-
+.contact-form h1,
 .contact-form p {
     margin: 10px;
 }
 
-  /* Estilos para el footer */
+/* Estilos para el footer */
 footer {
     display: flex;
     justify-content: left;
     align-items: center;
     padding: 15px;
-    background-color: #C0392B;
+    background-color: #D2691E;
     box-shadow: 0px -4px 4px rgba(0, 0, 0, 0.25);
     flex-direction: row;
-    color: black; 
+    color: black;
 }
 
 footer h2 {
@@ -133,15 +133,16 @@ footer div a img {
     height: auto;
 }
 
+/* Media queries para hacer el sitio responsive */
 
-
-/*
-div {
-    color: #2C3E50;
-    color: #34495E;
-    color: #8E44AD;
-    color: #27AE60;
-    color: #C0392B;
-    color: #F39C12;
+@media (min-width: 768px) {
+    .destinos-container {
+        grid-template-columns: 1fr 1fr;
+    }
 }
-*/
+
+@media (min-width: 1024px) {
+    .destinos-container {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
