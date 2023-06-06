@@ -15,7 +15,7 @@ body {
 }
 
 .navbar-toggler:hover {
-    background-color: #FFA500; /* Cambia el color de fondo al hacer hover */
+    background-color: #FFA500; /* Cambia el color de la hamburguesa fondo al hacer hover */
 }
 
 /* Estilos generales */
@@ -135,14 +135,94 @@ footer div a img {
 
 /* Media queries para hacer el sitio responsive */
 
-@media (min-width: 768px) {
+@media (max-width: 767px) {
+    img {
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 36px;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    section {
+        margin-bottom: 20px;
+        margin-left: 10px
+    }
+
+    div {
+        margin: 10px;
+    }
+
+    /* ajuste de .destinos-container para celular */
+    .destinos-container {
+        gap: 20px;
+    }
+
+    /* ajuste de tamaño de .contact-form para celular*/
+    .contact-form {
+        height: auto;
+        padding: 10px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        padding: 10px;
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    h1 {
+        font-size: 56px;
+    }
+
+    h2 {
+        font-size: 42px;
+    }
+
+    p {
+        font-size: 20px;
+    }
+
+    /* ajuste de .destinos-container para pantallas medianas */
     .destinos-container {
         grid-template-columns: 1fr 1fr;
+    }
+
+    /* ajuste de .contact-form para pantallas pantallas medianas */
+    .contact-form {
+        height: 500px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        padding: 15px;
+        font-size: 18px;
     }
 }
 
 @media (min-width: 1024px) {
+    /* ajuste de .destinos-container para escritorio */
     .destinos-container {
         grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    /* ajuste de .destinos-container para escritorio */
+    .contact-form {
+        height: 600px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        padding: 20px;
+        font-size: 20px;
     }
 }
