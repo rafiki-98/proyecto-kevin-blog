@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/styles.css">
-    <title>Rafiki de Viaje | Inicio</title>
+    <title>Rafiki de Viaje | Galería</title>
     <link rel="icon" href="../images/favicon.ico">
 </head>
 
@@ -52,52 +52,142 @@
         </div>
         </main>
 
-    <section>
-        <h2>Costa Rica</h2>
-        <div class="galeria">
-            <img src="../images/image-4.jpg" alt="Descripción de la imagen 4">
-            <img src="../images/image-5.jpg" alt="Descripción de la imagen 5">
-            <img src="../images/image-6.jpg" alt="Descripción de la imagen 6">
-            <img src="../images/image-7.jpg" alt="Descripción de la imagen 7">
-            <img src="../images/image-8.jpg" alt="Descripción de la imagen 8">
-            <img src="../images/image-9.jpg" alt="Descripción de la imagen 9">
-        </div>
-    </section>
-
-    <section>
-        <h2>Argentina</h2>
-        <div class="galeria">
-        <img src="../images/image-10.jpg" alt="Descripción de la imagen 10">
-        <img src="../images/image-11.jpg" alt="Descripción de la imagen 11">
-        <img src="../images/image-12.jpg" alt="Descripción de la imagen 12">
-        <img src="../images/image-13.jpg" alt="Descripción de la imagen 13">
-        <img src="../images/image-14.jpg" alt="Descripción de la imagen 14">
-        <img src="../images/image-15.jpg" alt="Descripción de la imagen 15">
-        </div>
-    </section>
-
-    <section>
-        <h2>Nicaragua</h2>
-        <div class="galeria">
-            <img src="" alt="Descripción de la imagen 16">
-            <img src="" alt="Descripción de la imagen 17">
-            <img src="" alt="Descripción de la imagen 18">
-            <img src="" alt="Descripción de la imagen 19">
-            <img src="" alt="Descripción de la imagen 20">
-            <img src="" alt="Descripción de la imagen 21">
-        </div>
-    </section>
-
-    <section>
-        <h2>México</h2>
-        <div class="galeria">
-            <img src="" alt="Descripción de la imagen 22">
-            <img src="" alt="Descripción de la imagen 23">
-            <img src="" alt="Descripción de la imagen 24">
-            <img src="" alt="Descripción de la imagen 25">
-            <img src="" alt="Descripción de la imagen 26">
-            <img src="" alt="Descripcion de la imagen 27">
-    </section>
+        <section>
+            <h2>Costa Rica</h2>
+            <div id="carouselCostaRica" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="../images/helados-mercado.jpg" alt="heladeria de sorbetera en Costa Rica">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../images/bajo-rodriguez.jpg" alt="señal de tránsito, bajo rodriguez">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../images/chirripo-km.jpg" alt="nubes en el cerro chirripo">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../images/cerro-personas.jpg" alt="grupo de amigos en cerro pelado">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../images/puerto-viejo.jpg" alt="playa puerto viejo con barco hundiendose">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../images/platanos-limon.jpg" alt="plantación de plátanos en Limón, Costa Rica">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselCostaRica" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselCostaRica" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+    
+        <section>
+            <h2>Argentina</h2>
+            <div id="carouselArgentina" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="../images/boca-restaurant.jpg" alt="restaurante en balcón en la Boca">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../images/tigre-delta.jpg" alt="navegando por el río de Tigre">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../images/iruya.jpg" alt="montañas en el norte argentino">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../images/mardel.jpg" alt="mar del plata en Argentina">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../images/purmamarca-cerro.jpg" alt="cerro de los siete colores en Jujuy">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../images/obelisco.jpg" alt="obelisco en la capital federal">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselArgentina" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselArgentina" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+    
+        <section>
+            <h2>Nicaragua</h2>
+            <div id="carouselNicaragua" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="../images/volcan-masaya.jpg" alt="letrero de volcan masaya">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../images/volcan-activo.jpg" alt="volcan masaya visto desde arriba">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../images/lago-masaya.jpg" alt="lago de Masaya desde un mirador">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../images/isletas-granada.jpg" alt="isletas en Granada">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../images/escuela.jpg" alt="escuela de español en Granada">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../images/cerro-negro.jpg" alt="cerro negro en León Nicaragua">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselNicaragua" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselNicaragua" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+    
+        <section>
+            <h2>México</h2>
+            <div id="carouselMexico" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="../images/chichen-itza.jpg" alt="piramides de méxico">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../images/zenote-mexico.jpg" alt="lagunas subterraneas de mexico">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../images/bote-isla-mujeres.jpg" alt="bote isla mujeres">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../images/manta-maya.jpg" alt="manta con arte maya">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../images/artesania-mexico.jpg" alt="artesanias en mexico">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../images/cancun-muelle.jpg" alt="muelle en mexico">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselMexico" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselMexico" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+    
 
     <footer>
         <h2>Contacto</h2>
