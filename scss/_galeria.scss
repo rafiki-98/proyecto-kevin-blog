@@ -1,0 +1,33 @@
+.galeria {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.galeria .carousel-inner img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid black;
+    transform: translateX(-10%);
+    overflow: hidden;
+}
+
+.galeria .carousel-control-prev,
+.galeria .carousel-control-next {
+    width: 5%;
+}
+
+.galeria .carousel-control-prev-icon,
+.galeria .carousel-control-next-icon {
+    transform: translateY(-50%);
+    top: 50%;
+}
+
+.galeria .carousel-control-prev {
+    left: -3%;
+}
+
+.galeria .carousel-control-next {
+    right: -3%;
+}
